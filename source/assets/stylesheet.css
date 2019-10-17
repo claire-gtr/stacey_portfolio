@@ -131,8 +131,12 @@ a.nav-link {
 
 .dropdown-divider {
   margin: 1rem;
-  width: 100px;
+  width: 150px;
   border-top: 1px solid var(--blue);
+}
+
+.divider-white {
+  border-top: 1px solid white;
 }
 
 .img-icon {
@@ -142,4 +146,9 @@ a.nav-link {
 
 .title-card h3 {
   margin-top: 0.5rem;
+}
+
+.img-logos {
+  height: 4rem;
+  margin: 1rem;
 }
