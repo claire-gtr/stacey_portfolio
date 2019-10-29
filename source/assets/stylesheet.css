@@ -1,5 +1,5 @@
 :root{
-    --blue: #3AAFA9;
+    --blue: #339FCD;
     --grey: #17252A;
     --dark-blue: #2B7A76;
   }
@@ -60,10 +60,9 @@ a.nav-link {
 }
 .footer-links a {
   color: black;
-  opacity: 0.15;
+  opacity: 0.4;
   text-decoration: none;
-  font-size: 24px;
-  padding: 0px 10px;
+  padding: 0px 5px;
 }
 .footer-links a:hover {
   opacity: 1;
@@ -77,7 +76,7 @@ a.nav-link {
 }
 
 .banner {
-  height: 80vh;
+  height: 90vh;
   padding-top: 5rem;
 }
 
