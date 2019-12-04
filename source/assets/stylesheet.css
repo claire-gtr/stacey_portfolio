@@ -119,6 +119,7 @@ a.nav-link {
 .card h2 {
   font-size: 2.5rem;
   font-weight: bold;
+  opacity: .7;
   margin: 0;
 }
 
@@ -150,4 +151,18 @@ a.nav-link {
 .img-logos {
   height: 4rem;
   margin: 1rem;
+}
+
+.img-logos-smaller {
+  height: 3rem;
+  margin: 1rem;
+}
+
+.img-logos-bigger {
+  height: 5rem;
+  margin: 1rem;
+}
+
+.stars i {
+  color:#D4AF36;
 }
