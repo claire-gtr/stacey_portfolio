@@ -44,7 +44,6 @@ a.nav-link {
 .banner {
   background-size: cover;
   background-position: center;
-  padding: 150px 0;
   margin-top: 5rem;
   height: calc(100vh - 5rem);
   background-image: url('./images/banner.png');
@@ -52,7 +51,7 @@ a.nav-link {
 
 .banner h1 {
   color: white;
-  font-size: 48px;
+  font-size: 32px;
   font-weight: bolder;
   letter-spacing: 4px;
 }
