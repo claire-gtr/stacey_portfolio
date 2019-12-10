@@ -15,7 +15,7 @@
 
 .navbar-orbis {
   justify-content: space-between;
-  background: var(--blue);
+  background: white;
   position: fixed;
   width: 100%;
   height: 5rem;
@@ -28,17 +28,44 @@
 }
 
 .logo-navbar {
-  height: 4.5rem;
+  height: 3rem;
 }
 
 a.nav-link {
-  color: white !important;
+  color: var(--blue) !important;
   font-weight: lighter;
   letter-spacing: 0.15rem;
 }
 
 .nav-link:hover {
   font-weight: bold;
+}
+
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  margin-top: 5rem;
+  height: calc(100vh - 5rem);
+  background-image: url('./images/banner.png');
+}
+
+.banner h1 {
+  color: white;
+  font-size: 48px;
+  font-weight: bolder;
+  letter-spacing: 4px;
+}
+
+.banner p {
+  font-size: 24px;
+  color: white;
+  font-weight: lighter;
+}
+
+.banner i {
+  font-size: 32px;
+  color: white;
 }
 
 
@@ -75,16 +102,7 @@ a.nav-link {
   background-color: var(--blue);
 }
 
-.banner {
-  height: 90vh;
-  padding-top: 5rem;
-}
 
-.banner h1 {
-  margin: 0;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  font-size: 3rem;
-}
 
 .text-white {
   color: white;
@@ -95,10 +113,6 @@ a.nav-link {
 }
 .text-blue {
   color: var(--blue);
-}
-
-.img-banner {
-  width: 90%;
 }
 
 .card-orbis {
