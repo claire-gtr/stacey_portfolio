@@ -37,7 +37,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link mx-2" href="#">about</a>
+              <a class="nav-link mx-2" href="index.html#about">about</a>
             </li>
             <li class="nav-item">
               <a class="nav-link mx-2" href="index.html#portfolio">portfolio</a>
@@ -45,15 +45,11 @@
             <li class="nav-item">
               <a class="nav-link mx-2" href="contact.html">contact</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link mx-2" href="index.html#quotes">quotes</a>
-            </li>
             <li class="nav-item dropdown">
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">about</a>
+                <a class="dropdown-item" href="index.html#about">about</a>
                 <a class="dropdown-item" href="index.html#portfolio">portfolio</a>
                 <a class="dropdown-item" href="#">contact</a>
-                <a class="dropdown-item" href="index.html#quotes">quotes</a>
               </div>
             </li>
           </ul>
@@ -62,65 +58,72 @@
 
       <div class="container-fluid py-5">
         <div class="card mt-3 p-3">
-          <div class="row">
-            <div class="col">
+          <div class="row h-100">
+            <div class="col-12 col-md-6 my-auto">
               <h2 class="text-grey text-center">GET IN TOUCH</h2>
-              <p class="text-center">Are you ready to create an incredible presentation?</p>
-              <p class="text-center">Have a few questions about powerpoint or presentation skills? Or just want to learn more about our agency?</p>
-              <p class="text-center">Drop us a message and we'll get back to you in a flash.</p>
+              <div class="row">
+                <div class="col mx-4">
+                  <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/YOUR_EMAIL_HERE" method="post">
+                    <fieldset id="fs-frm-inputs">
+                      <div class="row">
+                        <div class="col">
+                          <div class="form-group">
+                            <label for="full-name">Name</label>
+                            <input type="text" class="form-control" name="name" id="full-name" placeholder="Your name" required=""></div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <div class="form-group">
+                            <label for="email-address">Email Address</label>
+                            <input type="email" class="form-control" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <div class="form-group">
+                            <label for="company">Company (optional)</label>
+                            <input type="text" class="form-control" name="company" id="company" placeholder="Company name" required="">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea rows="3" class="form-control" name="message" id="message" placeholder="
+                            Write your message here" required=""></textarea>
+                          </div>
+                        </div>
+                      </div>
+                      <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                    </fieldset>
+                    <input type="submit" value="Submit" class= "btn w-100 btn-blue">
+                  </form>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="text-center w-100">
-            <div class="dropdown-divider mx-auto my-3"></div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <p class="text-center contact-links"> <a href="mailto:">mail@mail.com</a></p>
-              <p class="text-center contact-links"> <a href="tel:+41797585175">+41 7 97 58 51 75</a></p>
-            </div>
-          </div>
-          <div class="text-center w-100">
-            <div class="dropdown-divider mx-auto my-3"></div>
-          </div>
-          <div class="row">
-            <div class="col-11 offset-1 col-md-4 offset-md-4">
-              <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/YOUR_EMAIL_HERE" method="post">
-                <fieldset id="fs-frm-inputs">
-                  <div class="row">
-                    <div class="col">
-                      <div class="form-group">
-                        <label for="full-name">Name</label>
-                        <input type="text" class="form-control" name="name" id="full-name" placeholder="Your name" required=""></div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col">
-                      <div class="form-group">
-                        <label for="email-address">Email Address</label>
-                        <input type="email" class="form-control" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col">
-                      <div class="form-group">
-                        <label for="company">Company</label>
-                        <input type="text" class="form-control" name="company" id="company" placeholder="Company name" required="">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col">
-                      <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea rows="5" class="form-control" name="message" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
-                      </div>
-                    </div>
-                  </div>
-                  <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-                </fieldset>
-                <input type="submit" value="Submit" class= "btn w-100 btn-dark">
-              </form>
+            <div class="col-12 col-md-6 my-auto">
+              <div class="row">
+                <div class="col">
+                  <p class="text-center">Are you ready to create an incredible presentation?</p>
+                  <p class="text-center">Have a few questions about powerpoint or presentation skills, or just want to learn more about our agency?</p>
+                  <p class="text-center">Drop us a line and we'll get back to you in a flash.</p>
+                </div>
+              </div>
+              <div class="text-center w-100">
+                <div class="dropdown-divider mx-auto my-3"></div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p class="text-center contact-links"> <a href="mailto:">mail@mail.com</a></p>
+                  <p class="text-center contact-links"> <a href="tel:+41797585175">+41 7 97 58 51 75</a></p>
+                </div>
+              </div>
+              <div class="text-center w-100">
+                <div class="dropdown-divider mx-auto my-3"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -128,11 +131,22 @@
 
 
       <div class="footer">
-        <div class="footer-links">
-          Want to know more ? <em><a href="contact.html" class="footer-links"> Contact us </a></em>
-        </div>
-        <div class="footer-copyright">
-          Orbis Comms
+        <div class="container h-100 align-items-center">
+          <div class="row h-100">
+            <div class="col align-self-center">
+              <div class="d-flex align-items-center justify-content-center">
+                <div class="mx-2 text-center">
+                  <p>Interested in working together?</p>
+                </div>
+                <div class="mx-2 text-center footer-links">
+                  <p><em><a href="contact.html" class="footer-links"> Say hello at Website@website.com</a></p>
+                </div>
+              </div>
+              <div class="text-center footer-links">
+                <p><a href="tel:+417585175">+41 7 97 58 51 75</a></em></p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
