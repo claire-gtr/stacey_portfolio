@@ -35,17 +35,24 @@
 
 .logo-navbar {
   height: 3rem;
+  margin-left:1rem;
 }
 
 a.nav-link {
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: var(--blue) !important;
-  font-weight: 400;
-  letter-spacing: 0.15rem;
+  letter-spacing: 0.1rem;
 }
 
-.nav-link:hover {
-  font-weight: 600;
+
+@media (min-width: 768px) {
+  .nav-link:hover {
+    border-bottom: 1px solid var(--blue);
+  }
+}
+.navbar-collapse {
+  z-index: 100;
+  background: white;
 }
 
 .banner {
@@ -184,6 +191,12 @@ a.nav-link {
   border-top: 1px solid var(--blue);
 }
 
+.dropdown-divider-navbar {
+  margin: 1rem;
+  width: 100%;
+  border-top: 1px solid var(--blue);
+}
+
 .divider-white {
   border-top: 1px solid white;
 }
@@ -254,40 +267,28 @@ a.anchor {
   bottom:0;
   width:4px;
   margin-left:-2px;
-
-  background: rgba(0,0,0,.5);
+  background: var(--blue);
   cursor: ew-resize;
 }
 
-.handle:after {  /* Big orange knob  */
+.handle:after {
     position: absolute;
     top: 50%;
-    width: 64px;
-    height: 64px;
-    margin: -32px 0 0 -32px;
+    width: 56px;
+    height: 56px;
+    margin: -26px 0 0 -26px;
 
-    content:'\21d4';
+    content:'<  >';
     color:white;
-    font-weight:bold;
-    font-size:36px;
+    font-weight:lighter;
+    font-size:24px;
     text-align:center;
-    line-height:64px;
+    line-height:52px;
 
-    background: var(--blue); /* @orange */
-    border:1px solid var(--blue); /* darken(@orange, 5%) */
+    background: var(--blue);
+    border:1px solid var(--blue);
     border-radius: 50%;
     transition:all 0.3s ease;
-    box-shadow:
-      0 2px 6px rgba(0,0,0,.3),
-      inset 0 2px 0 rgba(255,255,255,.5),
-      inset 0 60px 50px -30px var(--blue); /* lighten(@orange, 20%)*/
 }
 
-.draggable:after {
-    width: 48px;
-    height: 48px;
-    margin: -24px 0 0 -24px;
-    line-height:48px;
-    font-size:30px;
-}
 
