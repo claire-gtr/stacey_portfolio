@@ -122,14 +122,15 @@ a.nav-link {
 }
 
 .contact-links a {
-  color: black;
-  opacity: 0.6;
+  color: var(--blue);
   text-decoration: none;
-  padding: 0px 5px;
 }
 
 .contact-links a:hover {
-  opacity: 1;
+  font-weight: 600;
+  color: var(--blue);
+  text-decoration: none;
+
 }
 
 .footer .fa-heart {
@@ -195,6 +196,12 @@ a.nav-link {
   margin: 1rem;
   width: 100%;
   border-top: 1px solid var(--blue);
+}
+
+.dropdown-divider-thick {
+  margin: 1rem;
+  width: 100%;
+  border-top: 3px solid var(--blue);
 }
 
 .divider-white {
