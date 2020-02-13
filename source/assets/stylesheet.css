@@ -11,11 +11,6 @@
   color: white;
 }
 
-.btn-small {
-  padding-left: 6rem;
-  padding-right: 6rem;
-}
-
 .main-container {
  min-height: 100vh; /* will cover the 100% of viewport */
  overflow: hidden;
@@ -171,6 +166,18 @@ a.nav-link {
 
 .number h2 {
   opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .card h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .card h6 {
+    font-size: 0.75rem;
+  }
 }
 
 .card p {
